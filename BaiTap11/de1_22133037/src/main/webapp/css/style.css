@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 1100px;
+    max-width: 95%;
+    margin: auto;
+}
+
+header {
+    background: #1976d2;
+    color: white;
+    padding: 18px 0;
+}
+
+.admin-header {
+    background: #343a40;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    min-height: 600px;
+    padding: 30px 0;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 25px;
+}
+
+.book-card {
+    background: white;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow:
+        0 2px 8px rgba(0,0,0,.12);
+}
+
+.book-card img {
+    display: block;
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.book-card h3 {
+    min-height: 45px;
+}
+
+.book-card h3 a {
+    text-decoration: none;
+    color: #1976d2;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+}
+
+.detail-image {
+    width: 250px;
+    height: 330px;
+    object-fit: cover;
+}
+
+form {
+    width: 600px;
+    max-width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button,
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 5px;
+    background: #1976d2;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #eee;
+}
+
+.pagination {
+    margin-top: 25px;
+    display: flex;
+    gap: 5px;
+}
+
+.pagination a {
+    padding: 8px 13px;
+    background: white;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a.active {
+    background: #1976d2;
+    color: white;
+}
+
+.review {
+    background: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 4px solid #1976d2;
+}
+
+.error {
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #ffdddd;
+    color: #a00;
+}
+
+.success {
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #ddffdd;
+    color: #075b07;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sitemesh>
+
+    <mapping path="/admin/*"
+             decorator="/WEB-INF/decorators/admin.jsp"/>
+
+    <mapping path="/home"
+             decorator="/WEB-INF/decorators/user.jsp"/>
+
+    <mapping path="/book-detail"
+             decorator="/WEB-INF/decorators/user.jsp"/>
+
+</sitemesh>
